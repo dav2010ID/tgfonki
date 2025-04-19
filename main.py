@@ -173,7 +173,7 @@ def format_song(raw_text):
     return format_lines('\n'.join(output))
 
 
-API_TOKEN = ''
+API_TOKEN = os.getenv('TOKEN')
 bot = telebot.TeleBot(API_TOKEN)
 
 
