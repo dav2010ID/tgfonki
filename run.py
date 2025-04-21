@@ -7,7 +7,7 @@ from telegram_song_bot.bot import SongBot
 
 if __name__ == "__main__":
     # Get API token from environment variable
-    api_token = "7596397457:AAFikBFvxIde4LQTNvIZqjMT2lbl1H7jYYY"
+    api_token = os.getenv("TOKEN")
     
     if not api_token:
         print("❌ Error: TOKEN environment variable not set")
